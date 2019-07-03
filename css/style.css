@@ -25,5 +25,25 @@ h1{
   text-decoration: underline;
   color: black;
   padding: 25px;
+  border: 1px solid black;
+}
 
+.insight-1{
+
+}
+
+.insight-2{
+  margin-left: 20px;
+}
+
+.insight-3{
+  margin-left: 40px;
+}
+
+.insight-4{
+  margin-left: 60px;
+}
+
+.insight-5{
+  margin-left: 80px;
 }
