@@ -1,0 +1,29 @@
+body {
+  background-color: rgb(23, 194, 173);
+  color: white;
+
+}
+
+h1{
+  font-weight: bold;
+}
+
+.container{
+  padding: 25px;
+}
+
+.intro-container{
+  padding: 25px;
+  text-align: center;
+}
+
+.rules-container{
+  padding: 25px;
+}
+
+.insight-container{
+  text-decoration: underline;
+  color: black;
+  padding: 25px;
+
+}
