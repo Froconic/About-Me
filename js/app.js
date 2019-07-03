@@ -10,16 +10,16 @@ function gamestart() {
   console.log(username);
   alert('You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked to pick some topics and then I will ask a series of yes or no questions based on what you picked. After you answer my information will popup on the screen so you can get some insight into who I am.')
   for(var i = 0; i < 5; i++) {
-    if(i ==== 0){
+    if(i === 0){
       var response = prompt("Have you heard of Scott Pilgrim?")
       answer = response.toLowerCase();
       if (answer === "yes") {
-        alert('That\'s awesome  ' + username '! I hope you enjoyed it! It\'s my absolute favorite series');
+        alert('That\'s awesome  ' + username + '! I hope you enjoyed it! It\'s my absolute favorite series');
       } else {
         alert('You should check it out! It\'s my absolute favorite series');
       }
     }
-    if(i ==== 1){
+    if(i === 1){
       var response = prompt("Have you ever been overseas?");
       answer = response.toLowerCase();
       if (answer === "yes") {
@@ -28,7 +28,7 @@ function gamestart() {
         alert('I highly suggest taking a trip' + username + ' I\'ve been to a lot of places in France. Like Liile, Paris of course, Le Quesnoy, that was a castle town, Valencienne, Oisy. Other parts of Europe like Amsterdam, Bruge, London, Brussels.! ');
       }
     }
-    if(i ==== 2){
+    if(i === 2){
       var response = prompt("Do you know what makes someone a renaissance (wo)man?");
       answer = response.toLowerCase();
       if (answer === "yes") {
@@ -38,7 +38,7 @@ function gamestart() {
       }
     }
   }
-    if(i ==== 3){
+    if(i === 3){
     var response = prompt("Are you on any special diet?");
     answer = response.toLowerCase();
     if (answer === "yes") {
@@ -53,7 +53,7 @@ function gamestart() {
     }
   }
 }
-  if(i ==== 4){
+  if(i === 4){
   var response = prompt("Do you have any siblings?")
   answer = response.toLowerCase();
   if (answer === "yes") {
@@ -65,7 +65,7 @@ function gamestart() {
     alert('An only child, cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest')
   }
 } else {
-  break;
+    break;
 }
 }
   }
