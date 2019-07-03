@@ -1,0 +1,49 @@
+body {
+  background-color: rgb(23, 194, 173);
+  color: white;
+
+}
+
+h1{
+  font-weight: bold;
+}
+
+.container{
+  padding: 25px;
+}
+
+.intro-container{
+  padding: 25px;
+  text-align: center;
+}
+
+.rules-container{
+  padding: 25px;
+}
+
+.insight-container{
+  text-decoration: underline;
+  color: black;
+  padding: 25px;
+  border: 1px solid black;
+}
+
+.insight-1{
+
+}
+
+.insight-2{
+  margin-left: 20px;
+}
+
+.insight-3{
+  margin-left: 40px;
+}
+
+.insight-4{
+  margin-left: 60px;
+}
+
+.insight-5{
+  margin-left: 80px;
+}
