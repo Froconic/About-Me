@@ -64,13 +64,8 @@ function gamestart() {
   } else {
     alert('An only child, cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest')
   }
-} else {
-    break;
 }
-}
-  }
-  }
-}
+
 
 // var user;
 // user = prompt('What is your name');
