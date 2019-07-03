@@ -2,7 +2,6 @@
 
 console.log('Its working');
 
-
 gamestart();
 
 function gamestart() {
@@ -11,7 +10,7 @@ function gamestart() {
   alert('You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked to pick some topics and then I will ask a series of yes or no questions based on what you picked. After you answer my information will popup on the screen so you can get some insight into who I am.');
   for (var i = 0; i < 5; i++) {
     if (i === 0) {
-      var response = prompt('Have you heard of Scott Pilgrim?')
+      var response = prompt('Have you heard of Scott Pilgrim?');
       var answer = response.toLowerCase();
       if (answer === 'yes') {
         alert('That\'s awesome  ' + username + '! I hope you enjoyed it! It\'s my absolute favorite series');
@@ -56,9 +55,9 @@ function gamestart() {
     }
 
     if (i === 4) {
-      response = prompt('Do you have any siblings?')
+      response = prompt('Do you have any siblings?');
       answer = response.toLowerCase();
-      if (answer === "yes") {
+      if (answer === 'yes') {
         var siblings = prompt('How many?');
         if (Number(siblings) < 0) {
           alert(siblings.toString() + 'cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest');
