@@ -1,69 +1,71 @@
 'use strict';
 
-console.log('Its working');
-console.log(prompt('boi'));
+// console.log('Its working');
+
 
 gamestart();
 
 function gamestart() {
   var username = prompt('What is your name?');
   console.log(username);
-  alert('You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked to pick some topics and then I will ask a series of yes or no questions based on what you picked. After you answer my information will popup on the screen so you can get some insight into who I am.')
-  for(var i = 0; i < 5; i++) {
-    if(i === 0){
-      var response = prompt("Have you heard of Scott Pilgrim?")
-      answer = response.toLowerCase();
-      if (answer === "yes") {
+  alert('Hello ' + username + '! You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked a series of yes or no questions. After you answer my information will popup on the screen so you can get some insight into who I am.');
+
+  for (var i = 0; i < 5; i++) {
+    if (i === 0) {
+      var response = prompt('Have you heard of Scott Pilgrim?');
+      var answer = response.toLowerCase();
+      if (answer === 'yes') {
         alert('That\'s awesome  ' + username + '! I hope you enjoyed it! It\'s my absolute favorite series');
       } else {
         alert('You should check it out! It\'s my absolute favorite series');
       }
     }
-    if(i === 1){
-      var response = prompt("Have you ever been overseas?");
+    if (i === 1) {
+      response = prompt('Have you ever been overseas?');
       answer = response.toLowerCase();
-      if (answer === "yes") {
+      if (answer === 'yes') {
         alert('Me too ' + username + ' I\'ve been to a lot of places in France. Like Liile, Paris of course, Le Quesnoy, that was a castle town, Valencienne, Oisy. Other parts of Europe like Amsterdam, Bruge, London, Brussels.');
       } else {
         alert('I highly suggest taking a trip' + username + ' I\'ve been to a lot of places in France. Like Liile, Paris of course, Le Quesnoy, that was a castle town, Valencienne, Oisy. Other parts of Europe like Amsterdam, Bruge, London, Brussels.! ');
       }
     }
-    if(i === 2){
-      var response = prompt("Do you know what makes someone a renaissance (wo)man?");
+    if (i === 2) {
+      response = prompt('Do you know what makes someone a renaissance (wo)man?');
       answer = response.toLowerCase();
-      if (answer === "yes") {
-        alert('I like to call myself a budding renaissance man. The 3 areas I am pursuing as my main focus are art, storytelling and philosophy.')
+      if (answer === 'yes') {
+        alert('I like to call myself a budding renaissance man. The 3 areas I am pursuing as my main focus are art, storytelling and philosophy.');
       } else {
         alert('Well the definition I go by is someone who is a mmaster in at least 3 seperate fields but often more. I like to call myself a budding renaissance man. The 3 areas I am pursuing as my main focus are art, storytelling and philosophy.');
       }
     }
-  }
-    if(i === 3){
-    var response = prompt("Are you on any special diet?");
-    answer = response.toLowerCase();
-    if (answer === "yes") {
-      var diet = prompt('What kind?')
-      if(diet.toLowerCase() === 'vegan') {
-        alert('Me too, or rather vegan inclined I should say. I don\'t eat anything with a face.');
+    if (i === 3) {
+      response = prompt('Are you on any special diet?');
+      answer = response.toLowerCase();
+      if (answer === 'yes') {
+        var diet = prompt('What kind?');
+        if (diet.toLowerCase() === 'vegan') {
+          alert('Me too, or rather vegan inclined I should say. I don\'t eat anything with a face.');
+        } else {
+          alert('Interesting ' + diet + 'that\'s cool I like to say I am vegan inclined I don\'t eat anything with a face.');
+        }
       } else {
-              alert('Interesting ' + diet + 'that\'s cool I like to say I am vegan inclined I don\'t eat anything with a face.');
+        alert('That\'s cool I like to say I am vegan inclined I don\'t eat anything with a face.');
+      }
+    }
+}
+  if (i === 4) {
+    response = prompt('Do you have any siblings?');
+    answer = response.toLowerCase();
+    if (answer === 'yes') {
+      var siblings = prompt('How many?');
+      if (Number(siblings) < 0) {
+        alert(siblings.toString() + 'cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest');
       }
     } else {
-      alert('That\'s cool I like to say I am vegan inclined I don\'t eat anything with a face.');
+      alert('An only child, cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest');
     }
   }
-}
-  if(i === 4){
-  var response = prompt("Do you have any siblings?")
-  answer = response.toLowerCase();
-  if (answer === "yes") {
-    var siblings = prompt('How many?');
-    if (Number(siblings) < 0 ) {
-      alert(siblings.toString() + 'cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest');
-    }
-  } else {
-    alert('An only child, cool. I have 5 siblings. 3 brothers and 2 sisters. I\'m the youngest')
-  }
+
 }
 
 
