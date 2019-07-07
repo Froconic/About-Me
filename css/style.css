@@ -1,49 +1,115 @@
-body {
-  background-color: rgb(23, 194, 173);
-  color: white;
-
+body
+{
+    color: black;
+    background-color: #9edec6;
+    font-size: 15px;
 }
 
-h1{
-  font-weight: bold;
+h1
+{
+    font-weight: bold;
 }
 
-.container{
-  padding: 25px;
-}
-
-.intro-container{
-  padding: 25px;
-  text-align: center;
-}
-
-.rules-container{
-  padding: 25px;
-}
-
-.insight-container{
+h2
+{
   text-decoration: underline;
-  color: black;
-  padding: 25px;
-  border: 1px solid black;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.insight-1{
+.welcome
+{
+    font-size: 50px;
 
+    color: black;
 }
 
-.insight-2{
-  margin-left: 20px;
+.container
+{
+    padding: 25px;
 }
 
-.insight-3{
-  margin-left: 40px;
+.intro-container
+{
+    font-size: 25px;
+
+    padding: 25px;
+
+    text-align: center;
 }
 
-.insight-4{
-  margin-left: 60px;
+.rules-container
+{
+    padding: 25px;
 }
 
-.insight-5{
-  margin-left: 80px;
+ul
+{
+    list-style: disc;
+}
+
+.insight-container
+{
+    padding: 25px;
+
+    text-decoration: underline;
+
+    color: black;
+    border: 1px solid black;
+}
+
+
+
+.insight-2
+{
+    margin-left: 20px;
+}
+
+.insight-3
+{
+    margin-left: 40px;
+}
+
+.insight-4
+{
+    margin-left: 60px;
+}
+
+.insight-5
+{
+    margin-left: 80px;
+}
+
+
+.edu-container
+{
+  padding-left: 0;
+  position: relative;
+  right: -150px;
+  top: -118px;
+}
+
+.edu-header
+{
+    margin-top: 15px;
+}
+
+.work-container {
+  position: relative;
+  bottom: 260px;
+  left: 360px;
+}
+
+.top-ten-container
+{
+  padding-left: 50px;
+  position: relative;
+  top: -520px;
+  left: 850px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
