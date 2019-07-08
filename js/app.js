@@ -15,7 +15,7 @@ alert('Hello ' + username + '! You are going to play a little game to get to kno
 //start of the loop that contains game
 for (var i = 0; i < 8; i++) {
 
-  //Sott Pilgrim Question
+  Sott Pilgrim Question
   if (i === 0) {
     var response = prompt('Have you heard of Scott Pilgrim?');
     response = response.toLowerCase();
@@ -86,16 +86,17 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  //Years in town Question
-  if (i === 5) {
+  Years in town Question
+  if (i === 0) {
+    var response ='';
     var answer = 7;
-    var tries = 4;
+    var tries = 0;
     response = prompt('How long do you think I have been in Cedar Rapids. You only get 4 guesses! Hint: I\'m 25 and came here to attend college');
     console.log(response);
     console.log(tries + ' tries');
-    tries--;
+    tries++;
     console.log(tries + ' tries');
-    while (tries > 0) {
+    while (tries < 4) {
       if (response.toLowerCase() === 'quit') {
         break;
       }
@@ -105,26 +106,22 @@ for (var i = 0; i < 8; i++) {
       console.log(answer + ' is answer');
 
       if (response === answer) {
-        tries = 0;
         alert('Ding Ding Ding you got it right!');
         console.log(tries + ' tries');
         correct++;
         break;
-      } else if (tries === 1) {
-        alert('Last try!');
-        response = prompt('Guess again');
-        console.log(response + ' is user response');
+  
       } else {
         alert('Err wrong');
         response = prompt('Guess again');
         console.log(response + ' is user response');
-        tries--;
+        tries++;
         console.log(tries + ' tries');
       }
     }
   }
 
-  //Programming languages Question
+  Programming languages Question
   if (i === 6) {
     response = prompt('Guess which of the following languages I know! if you get 1 right I\'ll tell you them all! Your choices are HTML, CSS, Python, Javascript, Ruby, Perl, Go.');
     console.log(response + ' is user response');
@@ -147,13 +144,13 @@ for (var i = 0; i < 8; i++) {
       console.log(response + ' is user response');
     }
 
-    //Tally of cool points
+    Tally of cool points
     if (i === 7) {
       alert('You are have reached the end of the game! Your answers gave you a cool rating of: ' + correct);
       alert('Explore the rest of the page to check out more about me that wasn\'t included in the game!');
     }
   }
-}
+// }
 
 
 // }
@@ -205,3 +202,4 @@ for (var i = 0; i < 8; i++) {
 
 // questions = prompt("")
 // };
+
