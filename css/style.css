@@ -3,6 +3,7 @@ body
     color: black;
     background-color: #9edec6;
     font-size: 20px;
+    text-decoration-color: #F19368;
 }
 
 h1
@@ -18,7 +19,13 @@ h2
   margin-bottom: 5px;
   font-size: 25px;
 }
-
+section
+{
+  display: block;
+  background-color: #F19368;
+  padding-left: 70px;
+  height: 403px;
+}
 .welcome
 {
     font-size: 50px;
@@ -47,7 +54,30 @@ h2
 
 ul
 {
-    list-style: disc;
+    list-style: none;
+}
+
+ul li::before
+{
+  content: "\2022";
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+ol
+{
+
+  color: black;
+  background-color: #F19368;
+}
+
+
+li
+{
+  color: black;
 }
 
 .insight-container
@@ -83,20 +113,27 @@ ul
 .list-container
 {
     position: relative;
+    background: #F19368;
+    padding-bottom: 208px;
 }
 
 .knowledge-container
 {
   position: relative;
   top: 0;
-  left: 0;
+  left: 110px;
   display: inline-block;
+  margin-bottom: 0px;
+  border: solid 1px white;
 }
 
 .edu-container
 {
-  padding-left: 0;
   position: absolute;
+  width: 172px;
+  border: solid 1px white;
+  left: 206px;
+  top: 481px;
 }
 
 .edu-header
@@ -104,17 +141,28 @@ ul
     margin-top: 15px;
 }
 
+h1.work-header
+{
+    padding-bottom: 10px;
+    text-align: center;
+    text-decoration: underline;
+}
+
 .work-container
 {
   position: absolute;
-  top: 310px;
-  left: 250px;
+  top: 320px;
+  left: 429px;
+  border: solid 1px white;
+  height: 267px;
 }
 
 .top-ten-container
 {
   padding-left: 50px;
   position: absolute;
-  top: 310px;
-  left: 510px;
-    }
+  top: 320px;
+  left: 704px;
+  border: solid 1px white;
+  height: 267px;
+}
