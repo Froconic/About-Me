@@ -5,12 +5,17 @@
 // gamestart();
 //
 // function gamestart() {
+//initialize global variables
 var correct = 0;
 var username = prompt('What is your name?');
-console.log(username);
+console.log(username + 'is current user');
+//Game rules intro
 alert('Hello ' + username + '! You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked a series of yes or no questions. After you answer my information will popup on the screen so you can get some insight into who I am.');
 
+//start of the loop that contains game
 for (var i = 0; i < 8; i++) {
+
+  //Sott Pilgrim Question
   if (i === 0) {
     var response = prompt('Have you heard of Scott Pilgrim?');
     response = response.toLowerCase();
@@ -23,6 +28,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Travel Question
   if (i === 1) {
     response = prompt('Have you ever been overseas?');
     response = response.toLowerCase();
@@ -35,6 +41,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Renaissance title question
   if (i === 2) {
     response = prompt('Do you know what makes someone a renaissance (wo)man?');
     response = response.toLowerCase();
@@ -47,6 +54,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Diet Question
   if (i === 3) {
     response = prompt('Are you on any special diet?');
     response = response.toLowerCase();
@@ -64,6 +72,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Sibling Question
   if (i === 4) {
     response = prompt('Do you have any siblings?');
     response = response.toLowerCase();
@@ -77,6 +86,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Years in town Question
   if (i === 5) {
     var answer = 7;
     var tries = 4;
@@ -114,6 +124,7 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
+  //Programming languages Question
   if (i === 6) {
     response = prompt('Guess which of the following languages I know! if you get 1 right I\'ll tell you them all! Your choices are HTML, CSS, Python, Javascript, Ruby, Perl, Go.');
     console.log(response + ' is user response');
@@ -136,6 +147,7 @@ for (var i = 0; i < 8; i++) {
       console.log(response + ' is user response');
     }
 
+    //Tally of cool points
     if (i === 7) {
       alert('You are have reached the end of the game! Your answers gave you a cool rating of: ' + correct);
       alert('Explore the rest of the page to check out more about me that wasn\'t included in the game!');

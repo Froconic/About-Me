@@ -2,12 +2,13 @@ body
 {
     color: black;
     background-color: #9edec6;
-    font-size: 15px;
+    font-size: 20px;
 }
 
 h1
 {
     font-weight: bold;
+    font-size: 30px;
 }
 
 h2
@@ -15,6 +16,7 @@ h2
   text-decoration: underline;
   font-weight: bold;
   margin-bottom: 5px;
+  font-size: 25px;
 }
 
 .welcome
@@ -58,8 +60,6 @@ ul
     border: 1px solid black;
 }
 
-
-
 .insight-2
 {
     margin-left: 20px;
@@ -80,13 +80,23 @@ ul
     margin-left: 80px;
 }
 
+.list-container
+{
+    position: relative;
+}
+
+.knowledge-container
+{
+  position: relative;
+  top: 0;
+  left: 0;
+  display: inline-block;
+}
 
 .edu-container
 {
   padding-left: 0;
-  position: relative;
-  right: -150px;
-  top: -118px;
+  position: absolute;
 }
 
 .edu-header
@@ -94,22 +104,17 @@ ul
     margin-top: 15px;
 }
 
-.work-container {
-  position: relative;
-  bottom: 260px;
-  left: 360px;
+.work-container
+{
+  position: absolute;
+  top: 310px;
+  left: 250px;
 }
 
 .top-ten-container
 {
   padding-left: 50px;
-  position: relative;
-  top: -520px;
-  left: 850px;
-}
-
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
-}
+  position: absolute;
+  top: 310px;
+  left: 510px;
+    }
