@@ -1,7 +1,7 @@
 body
 {
-    color: black;
-    background-color: #9edec6;
+    color: #313c38;
+    background-color: #FAFCFB;
     font-size: 20px;
     text-decoration-color: #F19368;
 }
@@ -22,15 +22,47 @@ h2
 section
 {
   display: block;
-  background-color: #F19368;
+  background-color: #9edec6;
   padding-left: 70px;
   height: 403px;
 }
+
+.welcome-container
+{
+  position: absolute;
+  left: 33%;
+  top: 35%;
+}
+
+/* .bg-overlay
+{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+} */
+
+/* .bg-overlay::before
+{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.71));
+} */
+
 .welcome
 {
     font-size: 50px;
 
-    color: black;
+    color: #313c38;
+}
+
+h2.welcome-sub
+{
+  text-decoration: none;
 }
 
 .container
@@ -45,6 +77,9 @@ section
     padding: 25px;
 
     text-align: center;
+    height: 100vh;
+    background-image: image('img/hairshot.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.73), rgba(0, 0, 0, 0.71)), url('img/hairshot.jpg');
 }
 
 .rules-container
@@ -71,7 +106,7 @@ ol
 {
 
   color: black;
-  background-color: #F19368;
+
 }
 
 
@@ -112,16 +147,15 @@ li
 
 .list-container
 {
-    position: relative;
-    background: #F19368;
+    /* position: relative; */
     padding-bottom: 208px;
 }
 
 .knowledge-container
 {
-  position: relative;
+  /* position: relative;
   top: 0;
-  left: 110px;
+  left: 110px; */
   display: inline-block;
   margin-bottom: 0px;
   border: solid 1px white;
@@ -129,11 +163,11 @@ li
 
 .edu-container
 {
-  position: absolute;
+  /* position: absolute; */
   width: 172px;
   border: solid 1px white;
-  left: 206px;
-  top: 481px;
+  /* left: 206px;
+  top: 481px; */
 }
 
 .edu-header
@@ -150,9 +184,9 @@ h1.work-header
 
 .work-container
 {
-  position: absolute;
+  /* position: absolute;
   top: 320px;
-  left: 429px;
+  left: 429px; */
   border: solid 1px white;
   height: 267px;
 }
@@ -160,9 +194,9 @@ h1.work-header
 .top-ten-container
 {
   padding-left: 50px;
-  position: absolute;
+  /* position: absolute;
   top: 320px;
-  left: 704px;
+  left: 704px; */
   border: solid 1px white;
   height: 267px;
 }
