@@ -19,12 +19,9 @@ h2
   margin-bottom: 5px;
   font-size: 25px;
 }
+
 section
 {
-  display: block;
-  background-color: #9edec6;
-  padding-left: 70px;
-  height: 403px;
 }
 
 .welcome-container
