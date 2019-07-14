@@ -127,6 +127,10 @@ li
     text-decoration: none;
 }
 
+.visual-header {
+    text-align: center;
+}
+
 .line
 {
     margin-bottom: 15px;
@@ -147,6 +151,16 @@ li
 {
     float: left;
 }
+
+.design-header {
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.design-list {
+    margin-left: 20px;
+}
+
 
 .graphic-design-container
 {
