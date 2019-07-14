@@ -1,34 +1,35 @@
 body
 {
-    color: #313c38;
-    background-color: #FAFCFB;
     font-size: 20px;
-    text-decoration-color: #F19368;
+
+    color: #313c38;
+    background-color: #fafcfb;
+
+    text-decoration-color: #f19368;
 }
 
 h1
 {
-    font-weight: bold;
     font-size: 30px;
+    font-weight: bold;
 }
 
 h2
 {
-  /* text-decoration: underline; */
-  font-weight: bold;
-  margin-bottom: 5px;
-  font-size: 25px;
+    font-size: 25px;
+    /* text-decoration: underline; */
+    font-weight: bold;
+
+    margin-bottom: 5px;
 }
 
-section
-{
-}
+
 
 .welcome-container
 {
-  position: absolute;
-  left: 33%;
-  top: 35%;
+    position: absolute;
+    top: 35%;
+    left: 33%;
 }
 
 /* .bg-overlay
@@ -59,8 +60,9 @@ section
 
 h2.welcome-sub
 {
-  text-decoration: none;
-  color: #F19368;
+    text-decoration: none;
+
+    color: #f19368;
 }
 
 .container
@@ -71,9 +73,12 @@ h2.welcome-sub
 .intro-container
 {
     font-size: 25px;
-    padding: 25px;
-    text-align: center;
+
     height: 100vh;
+    padding: 25px;
+
+    text-align: center;
+
     background-color: #9edec6;
 }
 
@@ -89,38 +94,63 @@ ul
 
 ul li::before
 {
-  content: "\2022";
-  color: #313c38;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
-  margin-left: -1em;
+    font-weight: bold;
+
+    display: inline-block;
+
+    width: 1em;
+    margin-left: -1em;
+
+    content: '\2022';
+
+    color: #313c38;
 }
 
 ol
 {
-
-  color: black;
-
+    color: black;
 }
 
 
 li
 {
-  color: black;
+    color: black;
 }
 
-.specialties-header {
-    text-decoration: none;
-    text-align: center;
+.specialties-header
+{
     font-size: 35px;
+
     margin-bottom: 10px;
 
+    text-align: center;
+    text-decoration: none;
 }
 
-.line {
-    border-bottom: solid #9edec6 1px;
+.line
+{
     margin-bottom: 15px;
+
+    border-bottom: solid #9edec6 1px;
+}
+
+.design-container
+{
+    position: relative;
+
+    float: left;
+
+    width: 50%;
+}
+
+.web-design-container
+{
+    float: left;
+}
+
+.graphic-design-container
+{
+    float: right;
 }
 
 .list-container
@@ -131,20 +161,23 @@ li
 
 .knowledge-container
 {
-  /* position: relative;
+    /* position: relative;
   top: 0;
   left: 110px; */
-  display: inline-block;
-  margin-bottom: 0px;
-  border: solid 1px white;
+    display: inline-block;
+
+    margin-bottom: 0;
+
+    border: solid 1px white;
 }
 
 .edu-container
 {
-  /* position: absolute; */
-  width: 172px;
-  border: solid 1px white;
-  /* left: 206px;
+    /* position: absolute; */
+    width: 172px;
+
+    border: solid 1px white;
+    /* left: 206px;
   top: 481px; */
 }
 
@@ -156,35 +189,41 @@ li
 h1.work-header
 {
     padding-bottom: 10px;
+
     text-align: center;
     text-decoration: underline;
 }
 
 .work-container
 {
-  /* position: absolute;
+    height: 267px;
+    /* position: absolute;
   top: 320px;
   left: 429px; */
-  border: solid 1px white;
-  height: 267px;
+
+    border: solid 1px white;
 }
 
 .top-ten-container
 {
-  padding-left: 50px;
-  /* position: absolute;
+    height: 267px;
+    padding-left: 50px;
+    /* position: absolute;
   top: 320px;
   left: 704px; */
-  border: solid 1px white;
-  height: 267px;
+
+    border: solid 1px white;
 }
 
-.clearfix {
-  overflow: auto;
+.clearfix
+{
+    overflow: auto;
 }
 
-.clearfix::after {
-  content: "";
-  clear: both;
-  display: table;
+.clearfix::after
+{
+    display: table;
+    clear: both;
+
+    content: '';
 }
