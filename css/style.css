@@ -14,7 +14,7 @@ h1
 
 h2
 {
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: bold;
   margin-bottom: 5px;
   font-size: 25px;
@@ -110,34 +110,17 @@ li
   color: black;
 }
 
-.insight-container
-{
-    padding: 25px;
+.specialties-header {
+    text-decoration: none;
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 10px;
 
-    text-decoration: underline;
-
-    color: black;
-    border: 1px solid black;
 }
 
-.insight-2
-{
-    margin-left: 20px;
-}
-
-.insight-3
-{
-    margin-left: 40px;
-}
-
-.insight-4
-{
-    margin-left: 60px;
-}
-
-.insight-5
-{
-    margin-left: 80px;
+.line {
+    border-bottom: solid #9edec6 1px;
+    margin-bottom: 15px;
 }
 
 .list-container
@@ -194,4 +177,14 @@ h1.work-header
   left: 704px; */
   border: solid 1px white;
   height: 267px;
+}
+
+.clearfix {
+  overflow: auto;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
