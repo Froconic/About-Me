@@ -1,3 +1,4 @@
+/* Global Tags */
 body
 {
     font-size: 20px;
@@ -116,7 +117,7 @@ li
 {
     color: black;
 }
-
+/* Skill section */
 .skills {
     height: 70vh;
     margin-top: 90px;
