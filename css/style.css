@@ -117,6 +117,15 @@ li
     color: black;
 }
 
+.skills {
+    height: 100vh;
+    margin: 50px 0;
+}
+
+.specialties-container {
+    height: 50%;
+}
+
 .specialties-header
 {
     font-size: 35px;
@@ -127,7 +136,7 @@ li
     text-decoration: none;
 }
 
-.visual-header {
+.group-header {
     text-align: center;
 }
 
@@ -141,27 +150,42 @@ li
 .design-container
 {
     position: relative;
-
     float: left;
-
-    width: 50%;
-
+    width: 61%;
+    border-right: solid #9edec6 2px;
     box-sizing: border-box;
-
+    margin-right: 65px;
 }
 
 .web-design-container
 {
     float: left;
-}
+    width: 40%;
+    border-right: solid #9edec6 2px;
+    margin-right: 45px;
+    height: 50%;}
 
-.design-header {
+.skills-header {
     text-decoration: underline;
     margin-bottom: 10px;
 }
 
-.design-list {
+.skills-list {
     margin-left: 20px;
+}
+
+.skills-list li::before
+{
+    font-weight: bold;
+
+    display: inline-block;
+
+    width: 1em;
+    margin-left: -1em;
+
+    content: '\2022';
+
+    color: #9edec6;
 }
 
 
@@ -172,7 +196,7 @@ li
 
 .dev-container {
     float: left;
-    width: 50%;
+    width: 33%;
     box-sizing: border-box;
 }
 
