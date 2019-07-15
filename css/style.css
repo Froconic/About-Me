@@ -160,9 +160,31 @@ li
 }
 
 .v-line.two {
-    
+
     right: 0;
 }
+
+.v-line.three {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.v-line.four {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.v-line.five {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 135%;
+}
+
 
 .design-container
 {
@@ -244,7 +266,7 @@ li
     float: left;
     margin-right: 50px;
     box-sizing: border-box;
-    width: 24%;
+    width: 29%;
     position: relative;
 }
 
@@ -252,7 +274,7 @@ li
     float: left;
     margin-right: 50px;
     box-sizing: border-box;
-    width: 24%;
+    width: 19%;
     position: relative;
 
 }
@@ -261,7 +283,7 @@ li
     float: left;
     margin-right: 50px;
     box-sizing: border-box;
-    width: 24%;
+    width: 21%;
     position: relative;
 
 }
@@ -270,7 +292,7 @@ li
     float: left;
     margin-right: 50px;
     box-sizing: border-box;
-    width: 24%;
+    width: 16%;
     position: relative;
 
 }
