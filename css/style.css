@@ -1,3 +1,4 @@
+/* Global Tags */
 body
 {
     font-size: 20px;
@@ -16,20 +17,18 @@ h1
 
 h2
 {
-    font-size: 25px;
-    /* text-decoration: underline; */
+    font-size: 40px;
     font-weight: bold;
-
     margin-bottom: 5px;
 }
 
-
+/* HERO SECTION */
 
 .welcome-container
 {
     position: absolute;
     top: 35%;
-    left: 33%;
+    left: 23%;
 }
 
 /* .bg-overlay
@@ -58,7 +57,7 @@ h2
     color: #313c38;
 }
 
-h2.welcome-sub
+.welcome-sub
 {
     text-decoration: none;
 
@@ -117,6 +116,8 @@ li
     color: black;
 }
 
+/* Skill section */
+
 .skills {
     height: 70vh;
     margin-top: 90px;
@@ -147,15 +148,49 @@ li
 {
     margin-bottom: 15px;
 
-    border-bottom: solid #9edec6 1px;
+    border-bottom: solid #9edec6 2px;
 }
+
+.v-line
+{
+    border-left: solid #9edec6 2px;
+    height: 80%;
+    position: absolute;
+    right: 50%;
+}
+
+.v-line.two {
+
+    right: 0;
+}
+
+.v-line.three {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 100%;
+}
+
+.v-line.four {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 95%;
+}
+
+.v-line.five {
+    border-color: #FAFCFB;
+    right: 0;
+    top: 0;
+    height: 114%;
+}
+
 
 .design-container
 {
     position: relative;
     float: left;
     width: 61%;
-    border-right: solid #9edec6 2px;
     box-sizing: border-box;
     margin-right: 65px;
     margin-top: 50px;
@@ -165,9 +200,10 @@ li
 {
     float: left;
     width: 40%;
-    border-right: solid #9edec6 2px;
     margin-right: 45px;
-    height: 50%;}
+    height: 50%;
+    position: relative;
+}
 
 .skills-header {
     text-decoration: underline;
@@ -196,6 +232,7 @@ li
 .graphic-design-container
 {
     float: right;
+    position: relative;
 }
 
 .dev-container {
@@ -205,17 +242,71 @@ li
     margin-top: 50px;
 }
 
-.knowledge-container
-{
-    /* position: relative;
-  top: 0;
-  left: 110px; */
-    display: inline-block;
+/* INTERESTS SECTION */
 
-    margin-bottom: 0;
-
-    border: solid 1px white;
+.interests {
+    background-color: #9edec6;
+    height: 66vh;
+    margin: 180px 0;
+    padding-bottom: 160px;
+    padding-top: 50px;
 }
+
+.interests-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.line.interests-line {
+    border-color: #FAFCFB;
+}
+
+.interests-group-header {
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+    margin-bottom: 10px;
+}
+
+.container.interests-container {
+    height: 100%;
+}
+.stories-container {
+    float: left;
+    margin-right: 50px;
+    box-sizing: border-box;
+    width: 29%;
+    position: relative;
+}
+
+.subjects-container {
+    float: left;
+    margin-right: 50px;
+    box-sizing: border-box;
+    width: 19%;
+    position: relative;
+
+}
+
+.growth-container {
+    float: left;
+    margin-right: 50px;
+    box-sizing: border-box;
+    width: 21%;
+    position: relative;
+
+}
+
+.hobbies-container {
+    float: left;
+    margin-right: 50px;
+    box-sizing: border-box;
+    width: 16%;
+    position: relative;
+
+}
+
+
 
 .edu-container
 {
