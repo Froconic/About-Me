@@ -2,22 +2,28 @@
 
 // console.log('Its working');
 
-// gamestart();
 //
-// function gamestart() {
-//initialize global variables
-var correct = 0;
-var username = prompt('What is your name?');
-console.log(username + 'is current user');
-//Game rules intro
-alert('Hello ' + username + '! You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked a series of yes or no questions. After you answer my information will popup on the screen so you can get some insight into who I am.');
+function gamestart() {
+  //initialize global variables
+  var response;
+  var correct = 0;
+  var username = prompt('What is your name?');
+  var message = `Hello ${username}! You are going to play a little game to get to know me My name is Akira I am a freelancer. I have skills in graphic design, web design and development. You are going to be asked a series of yes or no questions. After you answer my information will popup on the screen so you can get some insight into who I am.`;
+  console.log(username + 'is current user');
+  //Game rules intro
+  alert(message);
 
-//start of the loop that contains game
-for (var i = 0; i < 8; i++) {
+  // var greeting = document.getElementById('greeting');
 
-  // Sotty Pilgrim Question
-  if (i === 0) {
-    var response = prompt('Have you heard of Scott Pilgrim?');
+  // var greetingEl =  document.createElement('p');
+
+  // greetingEl.textContent = message;
+
+  // greeting.appendChild(greetingEl);
+
+  //   // Scott Pilgrim Question
+  function question1() {
+    response = prompt('Have you heard of Scott Pilgrim?');
     response = response.toLowerCase();
     console.log(response + ' is user response');
     if (response === 'yes') {
@@ -28,8 +34,9 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  //Travel Question
-  if (i === 1) {
+
+  //   //Travel Question
+  function question2() {
     response = prompt('Have you ever been overseas?');
     response = response.toLowerCase();
     console.log(response + ' is user response');
@@ -41,8 +48,8 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  //Renaissance title question
-  if (i === 2) {
+  //   //Renaissance title question
+  function question3() {
     response = prompt('Do you know what makes someone a renaissance (wo)man?');
     response = response.toLowerCase();
     console.log(response + ' is user response');
@@ -54,8 +61,9 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  //Diet Question
-  if (i === 3) {
+
+  //   //Diet Question
+  function question4() {
     response = prompt('Are you on any special diet?');
     response = response.toLowerCase();
     console.log(response + ' is user response');
@@ -72,8 +80,10 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  //Sibling Question
-  if (i === 4) {
+
+
+  //   //Sibling Question
+  function question5() {
     response = prompt('Do you have any siblings?');
     response = response.toLowerCase();
     console.log(response + ' is user response');
@@ -86,9 +96,10 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  // Years in town Question
-  if (i === 0) {
-    var response = '';
+
+  //   // Years in town Question
+  function question6() {
+    response = '';
     var answer = 7;
     var tries = 0;
     response = prompt('How long do you think I have been in Cedar Rapids. You only get 4 guesses! Hint: I\'m 25 and came here to attend college');
@@ -121,84 +132,50 @@ for (var i = 0; i < 8; i++) {
     }
   }
 
-  // Programming languages Question
-  if (i === 6) {
+  //   // Programming languages Question
+  function question7() {
     response = prompt('Guess which of the following languages I know! if you get 1 right I\'ll tell you them all! Your choices are HTML, CSS, Python, Javascript, Ruby, Perl, Go.');
     console.log(response + ' is user response');
-    tries = 0;
+    var tries = 0;
     console.log(tries + ' tries');
-  }
+    while (tries < 6) {
+      if (response === 'HTML' || response === 'CSS' || response === 'Python' || response === 'Javascript') {
+        alert(response + ' is correct! All the languages I know are HTML, CSS, Javascript, Python');
+        correct++;
+        break;
+      }
 
-  while (tries < 6) {
-    if (response === 'HTML' || response === 'CSS' || response === 'Python' || response === 'Javascript') {
-      alert(response + ' is correct! All the languages I know are HTML, CSS, Javascript, Python');
-      correct++;
-      break;
-    }
-
-    if (response !== 'HTML' || response !== 'CSS' || response !== 'Python' || response !== 'Javascript') {
-      alert('Err Wrong!');
-      tries++;
-      console.log(tries + ' tries');
-      response = prompt('Guess again');
-      console.log(response + ' is user response');
-    }
-
-    // Tally of cool points
-    if (i === 7) {
-      alert('You are have reached the end of the game! Your answers gave you a cool rating of: ' + correct);
-      alert('Explore the rest of the page to check out more about me that wasn\'t included in the game!');
+      if (response !== 'HTML' || response !== 'CSS' || response !== 'Python' || response !== 'Javascript') {
+        alert('Err Wrong!');
+        tries++;
+        console.log(tries + ' tries');
+        response = prompt('Guess again');
+        console.log(response + ' is user response');
+      }
     }
   }
+
+
+
+  //     // Tally of cool points
+  function tally() {
+    alert('You are have reached the end of the game! Your answers gave you a cool rating of: ' + correct);
+    alert('Explore the rest of the page to check out more about me that wasn\'t included in the game!');
+
+  }
+
+  // function render() {
+  //   var insightRender = getElementById(`insight`);
   // }
+  question1();
+  question2();
+  question3();
+  question4();
+  question5();
+  question6();
+  question7();
+  tally();
+  // render();
+}
 
-
-  // }
-
-  // for (var guesses = 0; guesses < 5; guesses++) {
-  //   var response = prompt('How long do you think I have been in Cedar Rapids. You only get 4 guesses! Hint: I\'m 25 and came here to attend college');
-  //   console.log(response);
-  //   // var answer = parseInt(response);
-  //   if (response !== '7') {
-  //     alert('Errrt Wrong!');
-  //     response = prompt(' Guess again!');
-  //     console.log(response);
-  //   } else if (response === '7') {
-  //     alert('Ding Ding Ding You are correct. I have lived in Cedar Rapids for 7 years');
-  //     break;
-  //   } else if (guesses === '4') {
-  //     alert('You ran out of tries! Here is the answer anywho. I have lived in Cedar Rapids for 7 years');
-  //   }
-  // }
-
-
-
-
-  // var user;
-  // user = prompt('What is your name');
-  // gameStart();
-  //
-  // function gameStart() {
-  //   for (var i = 0; i < 6; i++)
-  //     if (i === 0) {
-  //       var response = prompt('Did you go to college? Yes or no?');
-  //       if (response.toLowerCase(response) === "yes") {
-  //         alert('That is awesome ' + user + 'I did as well, although I dropped out in my third year :D');
-  //       } else {
-  //         alert('It\'s definitly not for everyone! I dropped out so don\'t feel too bad')
-  //       }
-  //
-  //
-  //     }
-  // }
-
-  // var homeTown, userName, siblings, brokenBones, renaissanceMan, diet, education, travel, questions, game;
-
-  // homeTown, siblings, brokenBones, renaissanceMan, diet, education, travel = false;
-
-  // document.getElementById('startButton').onclick = function gameStart() {
-  // userName = prompt('What is your name?');
-  // console.log('User name: ' + userName);
-
-  // questions = prompt("")
-  // };
+gamestart();
